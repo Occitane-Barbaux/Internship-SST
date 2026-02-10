@@ -31,8 +31,10 @@ Prerequisites:
 
 #### To add an env to jupyter:
 In EnvName:
-*conda install ipykernel *
-*python -m ipykernel install --user --name EnvName*
+
+>*conda install ipykernel*
+>
+>*python -m ipykernel install --user --name EnvName*
 
 ## Bibliography
 
