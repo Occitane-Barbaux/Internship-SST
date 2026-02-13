@@ -40,7 +40,7 @@ In EnvName:
 
 * Barbaux, O., Naveau, P., Bertrand, N., & Ribes, A. (2025). Integrating non-stationarity and uncertainty in design life levels based on climatological time series. Weather and Climate Extremes, 100807. [doi](https://www.sciencedirect.com/science/article/pii/S2212094725000659)
 * Guinaldo, T., Voldoire, A., Waldman, R., Saux Picart, S., & Roquet, H. (2023). Response of the sea surface temperature to heatwaves during the France 2022 meteorological summer. Ocean Science, 19(3), 629-647.Guinaldo, T., Cassou, C., Sallée, J. B., & Liné, A. (2025). Internal variability effect doped by climate change drove the 2023 marine heat extreme in the North Atlantic. Communications Earth & Environment, 6(1), 291, [doi](https://www.nature.com/articles/s43247-025-02197-1)
-* Barbaux, O., Naveau,P, Ribes, A, Bertrand, N, 2025. Extreme Temperatures for the 21st century. [Thesis defended, manuscript available on demand](https://theses.fr/s350251)
+* Barbaux, O., Naveau,P, Ribes, A, Bertrand, N, 2025. Extreme Temperatures for the 21st century. [Thesis defended, manuscript available here](https://theses.fr/s350251)
 * Robin, Y., Ribes, A., 2020. Nonstationary extreme value analysis for event attribution combining climate models and observations. Advances in Statistical Climatology, Meteorology and Oceanography 6, 205–221, [doi](https://doi.org/10.5194/ascmo-6-205-2020)
 
 
