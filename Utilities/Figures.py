@@ -53,11 +53,11 @@ T_interest=[50,100,200,500,1000,5000,10000]
 print("Figures: "+Y_ref)
 
 basepath=work_path
-pathFig=os.path.join(basepath,'./Figures/'+Y_ref+"_"+X_ref,dt_string)
+pathFig=os.path.join(basepath,'Figures/'+Y_ref+"_"+X_ref,dt_string)
 if not os.path.exists(pathFig):
     os.makedirs(pathFig)
 
-pathOut=os.path.join(basepath,'./Outputs/'+Y_ref+"_"+X_ref,dt_string)
+pathOut=os.path.join(basepath,'Outputs/'+Y_ref+"_"+X_ref,dt_string)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
 

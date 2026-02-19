@@ -70,7 +70,7 @@ scenarios=['ssp119','ssp126','ssp245','ssp370','ssp585']
 print("Application: "+Y_ref)
 
 basepath=work_path
-pathOut=os.path.join(basepath,'./Outputs/'+Y_ref+"_"+X_ref,dt_string)
+pathOut=os.path.join(basepath,'Outputs/'+Y_ref+"_"+X_ref,dt_string)
 if not os.path.exists(pathOut):
     os.makedirs(pathOut)
 
