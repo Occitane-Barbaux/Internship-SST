@@ -87,7 +87,11 @@ scaleF = np.exp(climCXCB.law_coef.loc["scale0",:,"Multi_Synthesis"] + XF * climC
 shape = climCXCB.law_coef.loc["shape0",:,"Multi_Synthesis"] + xr.zeros_like(locF)
 if not os.path.exists(os.path.join( pathOut , ("Parametres_vstime_posterior"+"_"+dt_string+".nc") )):
     print("Calculate Para")
-    para=xr.concat([locF, scaleF,shape], pd.Index(["loc","scale","shape"], name='parametre'))
+    #para=xr.concat([locF, scaleF,shape], pd.Index(["loc","scale","shape"], name='parametre'))
+
+    para = xr.concat([locF, scaleF, shape],dim="parametre")
+
+    para = para.assign_coords(parametre=["loc", "scale", "shape"])  
     para.to_netcdf(os.path.join( pathOut , ("Parametres_vstime_posterior"+"_"+dt_string+".nc") ))
 para=xr.open_dataarray(os.path.join( pathOut , ("Parametres_vstime_posterior"+"_"+dt_string+".nc")))
 
@@ -95,7 +99,7 @@ for T in T_interest:
     print("Calculate Return levels: "+ str(T)  )
     if not os.path.exists(os.path.join( pathOut , ("RL_F_posterior"+"_"+str(T)+"y_"+dt_string+".nc") )):
         
-        
+      
         RL_F=xr.DataArray(sc.genextreme.ppf((1-1/T),  loc = locF , scale = scaleF , c = - shape).T,
                    coords = [climCXCB.X.time , samples_MCMC  ] ,
                   dims = ["time","sample_MCMC"] )    
